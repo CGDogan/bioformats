@@ -136,7 +136,8 @@ public class JPEGReader extends DelegateReader {
       Location.mapFile(currentId + ".fixed", bytes);
       super.setId(currentId + ".fixed");
     }
-    if (getSizeX() > MAX_SIZE && getSizeY() > MAX_SIZE &&
+System.out.println("injected our code");
+    if (true || getSizeX() > MAX_SIZE && getSizeY() > MAX_SIZE &&
       !legacyReaderInitialized)
     {
       // this is a large image, so try to open with TileJPEGReader first
